@@ -2,7 +2,7 @@ const formatString = function(string) {
     if (string.length > 40) {
         let array = string.split('');
         array.splice(40);
-        array.splice(40, 0, '.', '.', '.');
+        array.push('...');
         string = array.join('');
     }
     return string;
