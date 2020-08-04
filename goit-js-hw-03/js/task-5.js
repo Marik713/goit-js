@@ -10,15 +10,7 @@ const getAllPropValues = function(arr, prop) {
     const values = [];
 
     for (const product of products) {
-        if (prop === 'name') {
-            values.push(product.name);
-        }
-        if (prop === 'price') {
-            values.push(product.price);
-        }
-        if (prop === 'quantity') {
-            values.push(product.quantity);
-        }
+        values.push(product[prop])
     }
     return values;
 };
