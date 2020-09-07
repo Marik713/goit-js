@@ -1,0 +1,22 @@
+.configure {
+    width: 600px;
+    height: 400px;
+}
+
+#gallery {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#validation-input {
+    border: 10px solid #bdbdbd;
+}
+
+#validation-input.valid {
+    border-color: #4caf50;
+}
+
+#validation-input.invalid {
+    border-color: #f44336;
+}
