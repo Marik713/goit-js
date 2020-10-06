@@ -16,7 +16,7 @@ const randomIntegerFromInterval = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1) + min);
 };
 const min = 0;
-const max = colors.length;
+const max = colors.length - 1;
 
 const switchColor = {
     intervalid: null,
