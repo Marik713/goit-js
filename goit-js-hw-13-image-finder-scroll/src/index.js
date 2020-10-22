@@ -18,6 +18,7 @@ refs.searchForm.addEventListener('submit', event => {
 
     imageService.resetPage();
     fetchImages();
+    PNotify.notice('Your fetch was succesfull!!!');
     refs.upArrow.classList.remove('is-hidden');
     form.reset();
 });
@@ -50,6 +51,5 @@ function showLoading() {
 function fetchImages() {
     imageService.fetchImage().then(data => {
         renderNewPictures(data.hits);
-        PNotify.notice('Your fetch was succesfull!!!');
     });
 };
